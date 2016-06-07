@@ -1,9 +1,102 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+body {
+    font-family: 'Raleway', sans-serif;
+    padding: 35px;
+	line-height: 1;
+}
 
-html, body, div, span, applet, object, iframe,
+/*BANNER AND HEADER STYLES*/
+#banner{
+    display: list-item;
+}
+
+#logo{
+    float:left;
+}
+
+/*Decoration for the header*/
+#titleHeader{
+  margin: 0;
+  font-size:20px;
+  font-family:"Raleway","cursive" !important;
+  text-transform:uppercase;
+  text-decoration:none;
+  font-weight:500;
+  font-style:normal;
+  display:inline-block;
+  line-height:110%;
+  color:#111;
+}
+
+/*Eliminate the underline in the link*/
+h1>a:hover{
+  text-decoration:none;
+}
+
+/*tag decoaration*/
+#tag{
+  margin: 0;
+  font-size:15px !important;
+  text-decoration:none;
+  font-weight:500;
+  font-style:normal;
+  display:inline-block;
+  line-height:110%;
+  color:#111;
+  font-family:"Pacifico";
+}
+
+/*Style for div containing nav bar*/
+#topNav nav{
+  float:right;
+  position:relative;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "futura-pt";
+  font-size: 13px;
+  line-height: 1.6em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/*style for each link in the navigation bar*/
+#banner #topNav #navBar>a{
+  margin-right:20px;
+  position:relative;
+  font-family: "Raleway", "cursive";
+  font-weight:bold;
+  font-size:15px;
+}
+
+/*style for the last item element in navigation bar*/
+#navBar>a:last-child{
+ margin-right:0px;
+}
+
+/*general style for the links*/
+a{
+  padding:10px 0;
+  display:inline-block;
+  color:#111;
+  text-decoration: none !important; 
+}
+
+a:hover{
+  text-decoration:none;
+}
+
+/*Style for an active link*/
+#navBar>a:active{
+  color:#111;
+}
+
+.page-divider{
+  border-bottom:none;
+  margin-bottom:40px;
+}
+
+
+
+html, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -28,9 +121,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -47,8 +138,6 @@ table {
 	border-spacing: 0;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-
 *,
 *:before,
 *:after {
@@ -56,14 +145,8 @@ table {
     -moz-box-sizing: border box;
     box-sizing: border-box;
 }
-@import url(https://fonts.googleapis.com/css?family=Raleway:500italic);
-.container {
-    font-family: 'Raleway', sans-serif;
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 1000px;
-    
-}
+
+
 h1 {
     margin-bottom: 25px;
     font-size: 35px;
@@ -81,4 +164,74 @@ p2 {
 img {
     float: right;
     padding: 0 25px;
+}
+
+
+
+/*FOOTER STYLES*/
+#footer{
+  margin-top:100px;
+  display:block;
+  border-top: 10px;
+  clear: both;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-box{
+  padding: 25px 0;
+  background-color: #F4F4F4;
+  text-align: center;
+}
+
+#footer .social-box .social-container {
+    width: 275px;
+    margin: 0 auto;
+}
+
+.social-container>a{
+  padding:10px;
+}
+
+.footer-nav{
+  font-size: 15px;
+  padding: 30px 0 10px 0;
+  background: #00000;
+}
+
+.footer-nav-house{
+max-width: 100%;
+padding: 0 60px;
+margin: 0 auto;
+}
+
+.footer-nav-left{
+  float:left;
+}
+.designer-name{
+}
+
+.footer-nav-right{
+float: right;
+font-family: 'MuseoSans_Fat';
+text-transform: uppercase;
+}
+
+
+#footer .footer-nav ul {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#footer .footer-nav li {
+    float: left;
+    margin: 0 15px 10px 0;
+    padding-right: 15px;
+    text-transform: uppercase;
+    font-family: 'MuseoSans_Fat';
+    border-right: 1px solid #333;
+}
+
+#footer .footer-nav li:last-child {
+    border-right: 0px;
 }
