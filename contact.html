@@ -44,60 +44,74 @@
               
     <div class="page-divider"></div>
 
-    <!--SECTION-->
-    <section id="contact-form" class="container row">
+    <!--CONTACT SECTION-->
+    <section class="container-wrap">
             
         <!--Label-->
         <div class="row">
-            <h3>Contact Us</h3>
+            <h3 id="contact-us-label">Contact Us</h3>
         </div>
         
         <!--Tag-->
         <div class="row">
-            <h4>We'd love to hear from you</h4>
+            <h4 id="contact-tag">We'd love to hear from you</h4>
         </div>
         
-        <!--Sender details-->
-        <div class="row input-container">
-            <!--Name-->
-            <div class="col-xs-12">
-                <div class="styled-input wide">
-                    <input type="text" required/>
-                    <label>Name</label>
-                </div>
-            </div>
-            
-            <!--Email-->
-            <div class="col-md-6 col-sm-12">
+        <form action class="contact-form">
+                
+            <!--First Name-->
+            <div class="col-sm-6">
                 <div class="styled-input">
-                    <input type="text" required/>
-                    <label>Email</label>
+                    <input type="text" class="form-control" required/>
+                    <label>First Name</label>
                 </div>
             </div>
-            
-            <!--Phone-->
-            <div class="col-md-6 col-sm-12">
+
+            <!--Last Name-->
+            <div class= "col-sm-6">
                 <div class="styled-input">
-                    <input type="text" required/>
-                    <label>Phone Number</label>
+                    <input type="text" class="form-control" required/>
+                    <label>Last Name</label>
                 </div>
-            </div>
-            
-            <!--Message-->
-            <div class="col-xs-12">
-                <div class="styled-input wide">
-                    <textarea requied></textarea>
-                    <label>Message</label>
                 </div>
-            </div>
-            
-            <!--send Button-->
-            <div class="col-xs-12">
-                <div class ="btn-lrg submit-btn">Send Message</div>
+                
+                <!--Email-->
+                <div class = "col-sm-6">
+                    <div class="styled-input">
+                        <input type="text" class="form-control" required/>
+                        <label>Email</label>
+                    </div>
                 </div>
-            </div>
-        </div> 
-        
+                
+                <!--Phone Number-->
+                <div class="col-sm-6">
+                    <div class="styled-input">
+                        <input type="text" class="form-control" required/>
+                        <label>Phone Number</label>
+                    </div>
+                </div>
+                
+                <!--Message Subject-->
+                <div class="col-sm-12">
+                    <div class="styled-input">
+                        <input type="text" class="form-control"  requied></input>
+                        <label>Subject</label>
+                    </div>
+                </div>
+                
+                <!---Message-->
+                <div class="col-sm-12">
+                    <div class="styled-input textarea">
+                        <textarea rows="3" type="text" class="form-control" requied></textarea>
+                        <label>Message</label>
+                    </div>    
+                </div>
+                       <!--send Button-->
+                <div class="col-xs-12">
+                    <button class ="square-button">Send Message</button>
+                </div>
+            </form>
+
     </section>
     
         <!--FOOTER / MIGUU-->
